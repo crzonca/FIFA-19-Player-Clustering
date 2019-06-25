@@ -4,7 +4,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.cluster import MeanShift
 from sklearn.cluster import estimate_bandwidth
 
-base_dir = 'D:\\Colin\\Programming\\DataSets\\fifa19\\'
+base_dir = '..\\Projects\\fifa\\'
 
 
 def run_all():
@@ -174,7 +174,7 @@ def groom_df():
 
     df = df.drop(columns=['Nationality', 'Club', 'Work Rate', 'Position', 'Loaned From', 'Body Type'])
 
-    df.to_csv('D:\\Colin\\Programming\\DataSets\\fifa19\\groomed_data.csv', index=False)
+    df.to_csv(base_dir + 'groomed_data.csv', index=False)
     return df
 
 
